@@ -1,5 +1,11 @@
 **/.DS_Store
 
+*
+
+!*.*
+
+!*/
+
 # Created by https://www.toptal.com/developers/gitignore/api/executable,swift,visualstudiocode,xcode
 # Edit at https://www.toptal.com/developers/gitignore?templates=executable,swift,visualstudiocode,xcode
 
