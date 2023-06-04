@@ -4,6 +4,13 @@ class Order {
     var tip = 0.0
     var total = 0.0
 
+    init(items: [String], subtotal: Double, tip: Double, total: Double) {
+        self.items = items
+        self.subtotal = subtotal
+        self.tip = tip
+        self.total = total
+  }
+
     func printReceipt() {
         print("Items:     \(items)")
         print("Subtotal:  $\(subtotal)")
@@ -24,12 +31,18 @@ class DeliveryOrder: Order {
     }
 }
 
-var order2 = DeliveryOrder()
+// var order2 = DeliveryOrder()
+var order1 = Order(items: ["Chili Fries", "Lemonade"], subtotal: 8.75, tip: 2.0, total: 12.75)
+var order8 = order1
 
-order2.items = ["Ramen", "Diet Coke"]
+/* order2.items = ["Ramen", "Diet Coke"]
 order2.subtotal = 14.69
 order2.tip = 2.00
 order2.deliveryFee = 3.00
 order2.total = 19.69
+order2.printReceipt() */
 
-order2.printReceipt()
+order8.total = 0.0
+
+print(order1.total)
+print(order8.total)
