@@ -5,3 +5,9 @@ struct Book {
 }
 
 var myFavBook = Book()
+
+print(myFavBook.pages)
+myFavBook.pages = 640
+print(myFavBook.pages)
+myFavBook.title = "Amulet: The Stonekeeper"
+print(myFavBook.title)
