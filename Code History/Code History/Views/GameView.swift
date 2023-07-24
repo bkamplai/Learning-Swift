@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     let question = Question(
         questionText: "What was the first computer bug?",
         possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
@@ -32,7 +32,7 @@ struct ContentView: View {
                     ForEach(0..<question.possibleAnswers.count) { answerIndex in
                         Button(action: {
                             print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
-                            mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
+                            mainColor = answerIndex == question.correctAnswerIndex ? GameColor.correctGuess : GameColor.incorrectGuess
                         }) {
                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                         }
@@ -45,5 +45,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GameView()
 }
