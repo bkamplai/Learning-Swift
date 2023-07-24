@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F14577E82A6E097F00224B02 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14577E72A6E097F00224B02 /* GameViewModel.swift */; };
+		F14577EA2A6E0BD700224B02 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14577E92A6E0BD700224B02 /* QuestionView.swift */; };
 		F1BE9A252A6DAFCD00BBCFB0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BE9A242A6DAFCD00BBCFB0 /* Question.swift */; };
 		F1BE9A272A6DB2ED00BBCFB0 /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BE9A262A6DB2ED00BBCFB0 /* ChoiceTextView.swift */; };
 		F1BE9A292A6DCCFB00BBCFB0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BE9A282A6DCCFB00BBCFB0 /* Game.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F14577E72A6E097F00224B02 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F14577E92A6E0BD700224B02 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		F1BE9A242A6DAFCD00BBCFB0 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F1BE9A262A6DB2ED00BBCFB0 /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		F1BE9A282A6DCCFB00BBCFB0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F14577E62A6E095300224B02 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F14577E72A6E097F00224B02 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F1BE9A2A2A6DCD3600BBCFB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 				F1D0E6862A6B809700017470 /* GameView.swift */,
 				F1BE9A482A6DF15900BBCFB0 /* WelcomeView.swift */,
 				F1BE9A4C2A6DF7FA00BBCFB0 /* BottomTextView.swift */,
+				F14577E92A6E0BD700224B02 /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -84,6 +97,7 @@
 		F1D0E6832A6B809700017470 /* Code History */ = {
 			isa = PBXGroup;
 			children = (
+				F14577E62A6E095300224B02 /* ViewModels */,
 				F1BE9A2B2A6DCD5A00BBCFB0 /* Views */,
 				F1BE9A2A2A6DCD3600BBCFB0 /* Models */,
 				F1D0E6842A6B809700017470 /* Code_HistoryApp.swift */,
@@ -171,6 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14577EA2A6E0BD700224B02 /* QuestionView.swift in Sources */,
+				F14577E82A6E097F00224B02 /* GameViewModel.swift in Sources */,
 				F1BE9A252A6DAFCD00BBCFB0 /* Question.swift in Sources */,
 				F1BE9A492A6DF15900BBCFB0 /* WelcomeView.swift in Sources */,
 				F1BE9A292A6DCCFB00BBCFB0 /* Game.swift in Sources */,
